@@ -12,7 +12,7 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "dev": "tsup src/index.ts --dts cjs,esm --watch",
+    "dev": "tsup src/index.ts --dts esm --watch",
     "build": "npm run clean && tsup src/index.ts --dts --format cjs,esm",
     "log": "npx conventional-changelog --config ./node_modules/@commitlint/cli -i CHANGELOG.md -s -r 0"
   },
